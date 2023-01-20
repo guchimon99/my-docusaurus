@@ -137,6 +137,7 @@ const config = {
         // Public API key: it is safe to commit it
         apiKey: '914d79ec5861055d0d9e5531e6718edd',
         indexName: 'my-docusaurus',
+        contextualSearch: true
       }
     }),
 };
