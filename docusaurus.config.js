@@ -50,8 +50,12 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleAnalytics: {
+          trackingID: 'G-C2ZHGPMCFQ',
+          anonymizeIP: true,
+        },
       }),
-    ],
+    ]
   ],
 
   themeConfig:
@@ -138,7 +142,7 @@ const config = {
         apiKey: '914d79ec5861055d0d9e5531e6718edd',
         indexName: 'my-docusaurus',
         contextualSearch: true
-      }
+      },
     }),
 };
 
