@@ -148,7 +148,7 @@ const config = {
               protocol: 'https',
             }
           ],
-          apiKey: 'dv4hpnl21mf8xec3p-1.a1.typesense.net',
+          apiKey: '9aLY3hUyP5AAA8SnqiC5Xk90fHnggX3Q',
           sendApiKeyAsQueryParam: false
         },
 
