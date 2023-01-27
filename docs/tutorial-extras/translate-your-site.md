@@ -2,87 +2,91 @@
 sidebar_position: 2
 ---
 
-# Translate your site
+---
+sidebar_position: 2
+---
 
-Let's translate `docs/intro.md` to French.
+# サイトを翻訳する
 
-## Configure i18n
+docs/intro.md をフランス語に翻訳してみましょう。
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+## i18n を設定する
+
+`docusaurus.config.js` を変更して `fr` ロケールのサポートを追加します。
 
 ```js title="docusaurus.config.js"
 module.exports = {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
+   国際化: {
+     defaultLocale: 'en',
+     ロケール: ['en', 'fr'],
+   }、
 };
 ```
 
-## Translate a doc
+## ドキュメントを翻訳する
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+「docs/intro.md」ファイルを「i18n/fr」フォルダーにコピーします。
 
-```bash
+```バッシュ
 mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
 
 cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
 ```
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+`i18n/fr/docusaurus-plugin-content-docs/current/intro.md` をフランス語に翻訳します。
 
-## Start your localized site
+## ローカライズされたサイトを開始する
 
-Start your site on the French locale:
+フランス語ロケールでサイトを開始します。
 
-```bash
+```バッシュ
 npm run start -- --locale fr
 ```
 
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+ローカライズされたサイトは [http://localhost:3000/fr/](http://localhost:3000/fr/) でアクセスでき、`Getting Started` ページは翻訳されています。
 
-:::caution
+：：：注意
 
-In development, you can only use one locale at a same time.
+開発中は、同時に 1 つのロケールしか使用できません。
 
 :::
 
-## Add a Locale Dropdown
+## ロケール ドロップダウンを追加する
 
-To navigate seamlessly across languages, add a locale dropdown.
+言語間をシームレスにナビゲートするには、ロケール ドロップダウンを追加します。
 
-Modify the `docusaurus.config.js` file:
+「docusaurus.config.js」ファイルを変更します。
 
 ```js title="docusaurus.config.js"
 module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
+   テーマ構成: {
+     ナビゲーションバー: {
+       項目: [
+         // ハイライト開始
+         {
+           タイプ: 'localeDropdown',
+         }、
+         // ハイライト終了
+       ]、
+     }、
+   }、
 };
 ```
 
-The locale dropdown now appears in your navbar:
+ロケール ドロップダウンがナビゲーション バーに表示されるようになりました。
 
-![Locale Dropdown](./img/localeDropdown.png)
+![ロケール ドロップダウン](./img/localeDropdown.png)
 
-## Build your localized site
+## ローカライズされたサイトを構築する
 
-Build your site for a specific locale:
+特定のロケール用にサイトを構築します。
 
-```bash
+```バッシュ
 npm run build -- --locale fr
 ```
 
-Or build your site to include all the locales at once:
+または、一度にすべてのロケールを含めるようにサイトを構築します。
 
-```bash
-npm run build
+```バッシュ
+npm ラン ビルド
 ```

@@ -2,54 +2,54 @@
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# ドキュメントのバージョンを管理する
 
-Docusaurus can manage multiple versions of your docs.
+Docusaurus は、ドキュメントの複数のバージョンを管理できます。
 
-## Create a docs version
+## ドキュメント バージョンを作成する
 
-Release a version 1.0 of your project:
+プロジェクトのバージョン 1.0 をリリースします。
 
-```bash
+```バッシュ
 npm run docusaurus docs:version 1.0
 ```
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+`docs` フォルダが `versioned_docs/version-1.0` にコピーされ、`versions.json` が作成されます。
 
-Your docs now have 2 versions:
+ドキュメントには 2 つのバージョンがあります。
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+- バージョン 1.0 ドキュメントの場合は、`http://localhost:3000/docs/` の `1.0`
+- `http://localhost:3000/docs/next/` の `current` で **近日リリース予定のドキュメント**
 
-## Add a Version Dropdown
+## バージョンのドロップダウンを追加
 
-To navigate seamlessly across versions, add a version dropdown.
+バージョン間をシームレスに移動するには、バージョン ドロップダウンを追加します。
 
-Modify the `docusaurus.config.js` file:
+「docusaurus.config.js」ファイルを変更します。
 
 ```js title="docusaurus.config.js"
 module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
+   テーマ構成: {
+     ナビゲーションバー: {
+       項目: [
+         // ハイライト開始
+         {
+           タイプ: 'docsVersionDropdown',
+         }、
+         // ハイライト終了
+       ]、
+     }、
+   }、
 };
 ```
 
-The docs version dropdown appears in your navbar:
+docs version ドロップダウンがナビゲーション バーに表示されます。
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+![ドキュメント バージョン ドロップダウン](./img/docsVersionDropdown.png)
 
-## Update an existing version
+## 既存のバージョンを更新する
 
-It is possible to edit versioned docs in their respective folder:
+バージョン管理されたドキュメントをそれぞれのフォルダーで編集できます。
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+- `versioned_docs/version-1.0/hello.md` は `http://localhost:3000/docs/hello` を更新します
+- `docs/hello.md` は `http://localhost:3000/docs/next/hello` を更新します

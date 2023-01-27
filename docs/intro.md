@@ -2,46 +2,46 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# チュートリアルの紹介
 
-Let's discover **Docusaurus in less than 5 minutes**.
+**5 分以内にドクサウルスを発見しましょう**。
 
-## Getting Started
+＃＃ 入門
 
-Get started by **creating a new site**.
+**新しいサイトを作成**することから始めましょう。
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+または、**[docusaurus.new](https://docusaurus.new)** を使用して**すぐに Docusaurus を試してみてください**。
 
-### What you'll need
+### 必要なもの
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [Node.js](https://nodejs.org/en/download/) バージョン 16.14 以降:
+   - Node.js をインストールするときは、依存関係に関連するすべてのチェックボックスをオンにすることをお勧めします。
 
-## Generate a new site
+## 新しいサイトを生成する
 
-Generate a new Docusaurus site using the **classic template**.
+**クラシック テンプレート**を使用して新しい Docusaurus サイトを生成します。
 
-The classic template will automatically be added to your project after you run the command:
+次のコマンドを実行すると、クラシック テンプレートがプロジェクトに自動的に追加されます。
 
-```bash
+```バッシュ
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+このコマンドは、コマンド プロンプト、Powershell、ターミナル、またはコード エディターのその他の統合ターミナルに入力できます。
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+このコマンドは、Docusaurus を実行するために必要なすべての依存関係もインストールします。
 
-## Start your site
+## サイトを開始する
 
-Run the development server:
+開発サーバーを実行します。
 
-```bash
-cd my-website
-npm run start
+```バッシュ
+cd 私のウェブサイト
+npm 実行開始
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+`cd` コマンドは、作業中のディレクトリを変更します。 新しく作成した Docusaurus サイトで作業するには、ターミナルをナビゲートする必要があります。
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+`npm run start` コマンドは、Web サイトをローカルに構築し、開発サーバーを介して提供し、http://localhost:3000/ で表示できるようにします。
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+`docs/intro.md` (このページ) を開き、いくつかの行を編集します。サイトは **自動的に再読み込み** され、変更が表示されます。
