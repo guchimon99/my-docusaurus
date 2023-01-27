@@ -154,6 +154,8 @@ const config = {
 
         typesenseSearchParameters: {},
 
+        searchPagePath: "search",
+
         // Optional
         contextualSearch: true,
       }
