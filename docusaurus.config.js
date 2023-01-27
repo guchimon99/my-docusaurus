@@ -138,12 +138,12 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       typesense: {
-        typesenseCollectionName: 'docusaurus-2_1674544771',
+        typesenseCollectionName: 'docusaurus-2_1674784757',
 
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'localhost',
+              host: 'dv4hpnl21mf8xec3p-1.a1.typesense.net',
               port: 443,
               protocol: 'https',
             }
