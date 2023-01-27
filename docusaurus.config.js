@@ -57,9 +57,11 @@ const config = {
       }),
     ]
   ],
-
+  themes: [
+    'docusaurus-theme-search-typesense'
+  ],
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    /** @type {import("docusaurus-theme-search-typesense").ThemeConfig} */
     ({
       navbar: {
         title: 'My Site',
@@ -135,14 +137,26 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-        // The application ID provided by Algolia
-        appId: 'E2AONBNS8O',
-        // Public API key: it is safe to commit it
-        apiKey: '914d79ec5861055d0d9e5531e6718edd',
-        indexName: 'my-docusaurus',
-        contextualSearch: true
-      },
+      typesense: {
+        typesenseCollectionName: 'docusaurus-2_1674544771',
+
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'localhost',
+              port: 443,
+              protocol: 'https',
+            }
+          ],
+          apiKey: 'dv4hpnl21mf8xec3p-1.a1.typesense.net',
+          sendApiKeyAsQueryParam: false
+        },
+
+        typesenseSearchParameters: {},
+
+        // Optional
+        contextualSearch: true,
+      }
     }),
 };
 
