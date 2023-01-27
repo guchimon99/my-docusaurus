@@ -138,7 +138,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       typesense: {
-        typesenseCollectionName: 'docusaurus-2_1674784757',
+        typesenseCollectionName: 'docusaurus-2_1674785793',
 
         typesenseServerConfig: {
           nodes: [
