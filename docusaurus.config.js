@@ -50,10 +50,6 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        gtag: {
-          trackingID: 'G-C2ZHGPMCFQ',
-          anonymizeIP: true,
-        },
       }),
     ]
   ],
@@ -64,7 +60,7 @@ const config = {
     /** @type {import("docusaurus-theme-search-typesense").ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'My Docusaurus',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -101,23 +97,6 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
@@ -126,12 +105,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/guchimon99/my-docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} guchimon99. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
