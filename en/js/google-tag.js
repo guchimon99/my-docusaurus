@@ -17,7 +17,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KP8DF7W');
 
-
 function setupPrivacyConsent () {
   const KEY = "consented"
 
@@ -51,12 +50,19 @@ function setupPrivacyConsent () {
 
   window.addEventListener("load", function () {
     const consented = getConsented()
-    if (consented === false) return
+    console.info({ consented })
+    if (consented === false) {
+      console.info("consented: false")
+      return
+    }
 
     if (consented === true) {
       consent()
+      console.info("consented: true")
       return
     }
+
+    console.info("consented: null")
 
     const document = window.document
 
