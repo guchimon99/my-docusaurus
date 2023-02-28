@@ -7,10 +7,6 @@ gtag('consent', 'default', {
   'analytics_storage': 'denied'
 });
 
-dataLayer.push({
-  'event': 'default_consent'
-});
-
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
