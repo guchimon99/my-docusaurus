@@ -29,7 +29,7 @@ function setupPrivacyConsent () {
   }
 
   function consent () {
-    gtag('consent', 'default', {
+    gtag('consent', 'update', {
       'ad_storage': 'granted',
       'analytics_storage': 'granted'
     });
@@ -37,7 +37,7 @@ function setupPrivacyConsent () {
   }
 
   function disconsent () {
-    gtag('consent', 'default', {
+    gtag('consent', 'update', {
       'ad_storage': 'denied',
       'analytics_storage': 'denied'
     });
