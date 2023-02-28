@@ -30,7 +30,10 @@ const config = {
 
   // GA
   scripts: [
-    '/my-docusaurus/js/google-tag.js'
+    {
+      src: '/my-docusaurus/js/google-tag.js',
+      "data-cookieconsent": "ignore"
+    }
   ],
 
   presets: [
