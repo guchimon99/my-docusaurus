@@ -28,6 +28,11 @@ const config = {
     locales: ['ja', 'en'],
   },
 
+  // GA
+  scripts: [
+    '/my-docusaurus/js/google-tag.js'
+  ],
+
   presets: [
     [
       'classic',
@@ -49,10 +54,6 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-        gtag: {
-          trackingID: "G-XSJJX1YMZT",
-          anonymizeIP: true
         }
       }),
     ]

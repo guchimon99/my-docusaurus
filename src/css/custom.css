@@ -28,3 +28,24 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.privacyConsent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-top: solid 1px #EEE;
+  box-shadow: 0 -0.1rem 0.1rem rgba(0,0,0,0.1);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.privacyConsent__message {
+}
+
+.privacyConsent__buttons {
+  display: flex;
+  gap: 0.25rem;
+}
