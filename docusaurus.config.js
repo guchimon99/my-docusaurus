@@ -31,8 +31,7 @@ const config = {
   // GA
   scripts: [
     {
-      src: '/my-docusaurus/js/google-tag.js',
-      "data-cookieconsent": "ignore"
+      src: '/my-docusaurus/js/google-tag.js'
     }
   ],
 
@@ -57,6 +56,10 @@ const config = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'GTM-KP8DF7W',
+          anonymizeIP: true
         }
       }),
     ]
