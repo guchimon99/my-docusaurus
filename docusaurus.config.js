@@ -144,12 +144,13 @@ const config = {
 
         typesenseSearchParameters: {},
 
-        searchPagePath: "search",
+        searchPagePath: '/search',
 
         // Optional
-        contextualSearch: true,
+        contextualSearch: true
       }
     }),
+
 };
 
 module.exports = config;
